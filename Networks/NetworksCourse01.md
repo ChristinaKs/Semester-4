@@ -1,12 +1,12 @@
 # **Networks Course 01 Notes**
 ## *An Introduction to Networking*
 
-> A network is a group of computers and other devices connected by some type of transmission media.
+> The resources a network makes available to its users include applications and the data provided by these applications. Collectively, these resources are usually referred to as network services. A network is a group of computers and other devices connected by some type of transmission media.
 
 ## How Networks are used
 * Client-server Applications || Client computer requests data or a service from a second computer (the server).
-    * Web services || A web browser (client app) requests a web page; the Web serber (server app) returns a the requested data.
-    * Email Services || SMTP (Simple Mail Transfer Protocol) sebds ab enail to the sebder's mail server, which sends it to  the receiver's mail server which intern uses POP3(Post Office Protocol) or IMAP4 (Internet Message Access Protocol) to allow the receiver to receive the email.
+    * Web services || A web browser (client computer) requests data or services; the Web serber (server app) returns a the requested data.
+    * Email Services || SMTP (Simple Mail Transfer Protocol) sends an email to the sender's mail server, which sends it to  the receiver's mail server which intern uses POP3(Post Office Protocol) or IMAP4 (Internet Message Access Protocol) to allow the receiver to receive the email.
     * FTP (File Transfer Protocol) || Transfer files between two computers using FTP or SFTP (Secure File Transfer Protocol)
     * Telnet service || Command-line used to control a computer remotely (not sexure)
     * Remote desktop || Secure transmission who both use RDP to establish a client-server communication
