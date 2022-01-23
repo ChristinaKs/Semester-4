@@ -14,8 +14,8 @@
         
 
 * File and Print Services
-    * File services || server's ability to share and store files
-    * File server || computer that stores files
+    * File services || server's ability to share files and disk storage space
+    * File server || computer that provides files > one central location for data is more secure than relying on each individual to make backups
     * Print Services || share printers across a network
         * one printer = less time on maintenance and management
 
@@ -39,7 +39,7 @@
 * Network operating system || controlls access to the entire network
 
 ## Peer-to-Peer (or point-to-point) Model
-The OS of each computer on the network is responsible for controlling access to its resources - no centralized connection. Each computer has its own local account that is not accessible by others.
+The OS of each computer on the network is responsible for controlling access to its resources - no centralized connection. Each computer has its own local account that is not accessible by others. No computer has more authority than another; each computer controls its own resources, and communicates directly with other computers
 
 Computers (hosts) can share resources or prevent accessto resources.
 
@@ -52,7 +52,7 @@ Computers (hosts) can share resources or prevent accessto resources.
     * Not practical for large installations
 
 ## Client-Server Network Model
-Resources are managed by the Network Operating System (NOS) through a centralized database.
+Resources are managed by the Network Operating System (NOS) through a centralized database. A Windows domain uses the client-server model to control access to the network, where security on each computer or device is controlled by a centralized database on a domain controller
 
 Terminology and definitions:
 
@@ -79,15 +79,23 @@ Servers that have NOS installed require more memory, storage capacity and proces
         > Multiple shared resource access centrally controlled
         > Centrol problem monitoring, diagnostics and correction capabilities
         > More scalable
+    
+    Disadvantages in relation to P2P
+        > Complex in design
+        > Harder to maintain
 
 ## LAN and Their Hardware
-LAN (Locan Area Network) is usually contained in a small space. 
+A network is a LAN (Locan Area Network) because each node on the network can communicate directly with others on the network. This type of network is usually contained in a small space. 
 
 It needs a switch which receives incoming data from ports and redirects it to another or multiple other ports. It can have many switches by using a backbone which is a conduit that connects the segments of a network.
 
 It uses Star Topology (all devides are connected to one device - the switch) and uses a NIC (Network Interface Card) which is a network port used to attach a device to a network.
 
-The router is a device that manages the traffic between multiple networks. It can be used in small home networks to connect the LAN to the internet. Intustrial grade routers can have several network ports - one for each netwerk it connects to. It is the gateway between networks.
+The router is a device that manages the traffic between multiple networks. It can be used in small home networks to connect the LAN to the internet. Intustrial grade routers can have several network ports - one for each network it connects to. It is the gateway between networks. These switches are in line and are connected through a bus topology, making the entire network a star-bus topology.
+
+A host is any computer on a network that hosts a resource such as an application or data, and a node is any computer or device on a network that can be addressed on the local network. A client computer or server is both a node and a host, but a router or switch does not normally host resources and is, therefore, merely a node on the network.
+
+> The ring topology, which is no longer used today, is where nodes are connected in a ring form: one node may only connect to two neighbour nodes. Any node may put data on the ring only when it holds a token, which is a group of bits which passes through the ring. It is no longer used because it is slow.
 
 ## MANs and WANs
 Metropolitan Area Network (MAN) is a group of connected LANs in the same geographical area - also known as Campus area network (aka CAN).
