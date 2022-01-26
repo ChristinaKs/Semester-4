@@ -26,6 +26,7 @@ Sensors can discover user action and respond
 * Can be multiple pages
 * Folders to organize apps
 * "OK Google"
+> https://android.gadgethacks.com/how-to/9-fresh-new-android-launchers-replace-your-boring-home-screen-2021-edition-0384249/
 ![](2022-01-24-14-15-33.png)
 ![](2022-01-24-14-14-44.png)
 
@@ -61,6 +62,7 @@ To publish an Android app, it needs to be done through Google Play store as it i
 
 ## ***Android Platform Architecture***
 ## Android Stack
+> Diagram created by teacher   
 ![](2022-01-24-14-22-58.png)
 1. System and user apps
 2. Android OS API in Java Framework
@@ -90,6 +92,7 @@ To publish an Android app, it needs to be done through Google Play store as it i
     
 
 ## Older Android Versions
+> https://stackoverflow.com/questions/8629687/android-api-level-vs-android-version
 ![](2022-01-25-13-31-22.png)
 
 ## ***App Development***
