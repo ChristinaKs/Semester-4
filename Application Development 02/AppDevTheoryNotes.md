@@ -1,11 +1,11 @@
-# **Application Development 02 Course 01 Notes**
+# **Chapter 01**
 ## *Introduction to Application Development with Android*
 
 > For tutorials on Android Studio app, you can visit https://developer.android.com
 
-
+## ***Android Ecosystem***
 ## What is Android?
-[Skipped -- need notes to be posted (will update)]
+Android is a mobile OS based on Linux kernel, making it open source, which offers UI for touch screens. It is used on over 80% of all smartphones and can power devices such as watches, Tvs and cars. Android offers offers over 2 million apps in the Google Play store and is highly customizable for devices by vendors.
 
 ## Android User Interaction
 * Touch gestures (i.e.: swiping, tapping, pinching)
@@ -112,4 +112,45 @@ An app that:
 4. Compability: run well on older platform versions
 5. Marketing: Understand the market and your users -- variable prices
 
-***[Incomplete for the moment]***
+## App Building Blocks
+* Resources
+    * Layouts
+    * Images
+    * Strings
+    * Colours as XML and media files
+* Components
+    * Activities
+    * Services
+    * Helper classes as Java code
+* Manifest -- Information about apps for the runtime
+* Build configuration -- APK versions in Gradle config files
+
+# Chapter 02
+## *Your First Android App*
+> This chapter is dedicated to creating basic applications with Android Studio and running apps on virtual and physical machines. Prerequisites include Java programming Languages, OOP, XML and using IDE.
+
+## ***Android Studio***
+## What is Android Studio?
+Android studio is an intrated development environment (IDE) that offers templates for projects and activities, a layout editor, testing tools, gradle-based build, log console and debugger as well as Android device emulators.
+
+## Android Studio Interface
+> Diagram by teacher
+![](2022-01-26-13-09-03.png)
+
+1. Toolbar
+    * Carries out a wide range of actions i.e.: running app, launching tools, etc.
+2. Navigation bar
+    * Helps navigate through projects
+    * Open files for editing
+    * Provides compact view of structure
+3. Project panes
+    * Allows you to navigate through the hierarchy of your projects folders
+4. Editor
+    * Where you create and modify code
+    * Allows you to view and edit your project
+    * Includes the windows for the palette and layout editor as well as code editor
+5. Tabs for other panes
+
+## *Creating your first Android app
+
+
