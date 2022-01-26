@@ -151,6 +151,70 @@ Android studio is an intrated development environment (IDE) that offers template
     * Includes the windows for the palette and layout editor as well as code editor
 5. Tabs for other panes
 
-## *Creating your first Android app
+## *Creating your first Android app*
+> 1. Start Android Studio
+> 2. Create a project inside Android Studio
+> 3. Name your app
+> 4. Pick an activity template (we will mostly use 'Basic Activity' or 'Empty Activity')
+> 5. Name your activity
+> 6. Run your app
+
+## Naming your Activity
+The good practice beind naming your activity goes as follows:
+* Activity name: MainActivity
+* Layout name: activity_main
+
+In this step you also ensure that both the 'Generate Layout File' and 'AppCompat' checkboxes are checked.
+
+## Project folders
+> Diagram by teacher  
+![](2022-01-26-15-29-53.png)
+1. Android Manifest file
+    * Description of the app read by the Android runtime
+2. Java source code packages
+3. Resources (XML)
+    * Layout
+    * Strings
+    * Images
+    * Dimensions
+    * Colours
+    * etc
+4. Gradle build files
+
+## Gradle Build System
+The Gradle build system is a modern build subsystem in Android studio. It has three build.gradle subsections:
+1. project
+2. module
+3. settings
+
+## Running your app on a physical device
+1. Turn on Developer Options on your phone
+    * Settings > about Phone
+    * Build number x 7
+2. Turn on USB Debugging
+    * Settings > Developper Options > USB Debugging
+3. Connect phone to computer with cable
+
+## Adding Logging to your App
+The Logcat pane shows information as the app runs. You can selt filters in it to see what's important to you
+
+Logging statements:
+```java
+// Use class name as tag
+MainActivity.class.getSimpleName();
+
+// Show message in Android Monitor, logcat pane 
+// log.<Log-level>(TAG, "Message");
+Log.d(TAG, "Creating the URI...");
+```
+
+# Chapter 03
+## *Layouts and Resources for the UI*
+
+> This chapter discusses Views, view groups and view hierarchy, the layout editor and *ConstraintLayout*, Event handling as well as Resources and Measurements
+
+## ***Views***
+## What is a view?
+Everything you see is a view
 
 
