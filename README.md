@@ -17,4 +17,4 @@
   This is a file containing practice notes from this course. These notes will contain the practical, more hands-on portion of what is learned during this semester. Most of these notes will be pertaining to the coding we will be doing in class.
   
 ### File: Any file with the name format YYYY-MM-DD-HH-MM-SS.png
-  These are images taken from online (has link attached to it when it comes up) that is used in any other file in this folder.
+  These are images taken from the teacher's notes or online (has link attached to it when it comes up) that is used in any other file in this folder.
