@@ -151,6 +151,26 @@ Android studio is an intrated development environment (IDE) that offers template
     * Includes the windows for the palette and layout editor as well as code editor
 5. Tabs for other panes
 
+> Diagram by teacher
+![](2022-01-26-16-52-21.png)
+
+1. XML Layout file
+    * Used to define the actual UI
+    * Holds all the elements(views) or the tools used in the application
+2. Design and Text tabs
+3. Palette pane
+    * Contains various different views
+    * Can drag its contents directly onto the Design pane
+4. Component Tree
+    * Shows the hierarchy of components in your layout
+5. Design and Blueprint panes
+    * Left is design -- Right is blueprint
+    * Portrays a simplified, outlined view of the UI
+6. Attributes tab
+    * Margin controls for positioning
+    * Attributes such as layout_width and layout_height
+    
+
 ## *Creating your first Android app*
 > 1. Start Android Studio
 > 2. Create a project inside Android Studio
@@ -217,4 +237,169 @@ Log.d(TAG, "Creating the URI...");
 ## What is a view?
 Everything you see is a view
 
+In reality, a view is a subclass that is a basic UI building block
+* Display text (TextView class), edit text (EditText class)
+* Buttons (Buttons class), menus, other controls
+* Scrollable (ScrollView, RecyclerView)
+* Show images (ImageView)
+* Group views (ConstraintLayout and LinearLayout)
 
+Below are examples of view subclasses:
+![](2022-01-26-16-49-18.png)
+
+## View Attributes
+Views usually have colour, dimentions and a position. They may have a focus, such as recceiving user inpit and may be interactive. An example of interactivity is that a view could respond to a user click. A view is usually, but not necessarily, visible and tends to have relationships with other views.
+
+## View Defined in XML
+```XML
+<TextView
+    android:id="@+id/show_count"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/myBackgroundColor"
+    android:text="@string/count_initial_value"
+    android:textColor="@color/colorPrimary"
+    android:textSize="@dimen/count_text_size"
+    android:textStyle="bold" 
+/>
+```
+
+## What is the Context? 
+Context is an interface to global information about an application environment.
+* You can get the context
+* An activity can be its own context
+
+## Custom Views
+* Over 100 different types of views
+* Creat custom views by subclassing existing views or the View class
+
+## ***ViewGroup and View hierarchy***
+## Viewgroups and "child" views
+* ConstraintLayout:
+    * Positions UI elements using constraint connections
+    * Constraint connections to other elements and layout edges
+* ScrollView: 
+    * Contains one element
+    * Enables scrolling
+* RecyclerView
+    * Contains a list of elements
+    * Enables scrolling by adding and removing elements dynamically
+
+## ViewGroups for Layouts
+Layouts are specigic types of ViewGroups: they are a subclass.
+* They contain child views
+* Can be in a row, column, grid, table, absolute
+
+## Common Layout Classes
+> Diagram by teacher
+![](2022-01-26-17-51-00.png)
+
+1. LinearLayout = Horizontal or vertical row 
+    * Creates scrollbar if legth of window > length of screen
+2. ConstraintLayout = Connects views with constraints
+3. GridLayout = Scrolling grid of rows and columns
+4. TableLayout = arranged groups of views into rows and columns
+5. RelativeLayout = Enables to specify location of child layout in relation to each other
+6. FrameLayout: Shows one child of a stack of children
+
+## Class hierarchy vs. Layout hierarchy
+| Class Hierarchy | Layout Hierarchy |
+|-----------------|------------------|
+| Standard object-oriented class inheritance | How views are visually arranged|
+|Superclass-subclass relationship | Parent-child relationship|
+
+## Hierarchy of ViewGroups and Views
+>https://www.researchgate.net/publication/342510190_Enhancing_Automated_GUI_Exploration_Techniques_for_Android_Mobile_Applications/figures?lo=1&utm_source=google&utm_medium=organic
+![](2022-01-26-18-07-01.png)
+
+## View Hierarchy and Screen Layout
+> Diagram by teacher
+![](2022-01-26-18-08-47.png)
+
+## View Hieararchy in the Layout editor
+> Diagram by teacher
+![](2022-01-26-18-09-44.png)
+
+## Best Practices for View Hierarchies
+The arrangements of view hierarchies affects app performance. To ensure better performance:
+* Use smallest number of simplest views possible
+* Keep hierarchy flat by limiting nesting of views and view groups
+
+## ***The layout Editor and Constraint Layout***
+## What is ConstraintLayout?
+ConstraintLayout is the default layout for a new Android Studio project. It is a ViewGroup that offers flexibility for layout design and t provides constraints to determine positions and alignment of UI elements. In this context, constraint is a connection to another view, parent layout or invisible guideline.
+
+## The layout Editor with ConstraintLayout
+* Connects UI elements to parent layout
+* Resize and position elements
+* Align elements to others
+* Adjust margins and dimensions
+* Change attributes
+
+## Layout Editor Main Toolbar
+> Diagram by teacher
+![](2022-01-26-20-20-01.png)
+
+1. Select Design Surface: Design and Blueprint panes
+2. Orientation in Editor: Portrait and Landscape
+3. Device in Editor: Choose device for preview
+4. API Version in Editor: Choose API for preview
+5. Theme in Editor: Choose theme for preview 
+6. Locale in Editor: Choose language/locale for preview
+
+## ConstraintLayout toolbar in layout editor
+> Diagram by teacher
+![](2022-01-26-20-21-07.png)
+
+1. Show: Show Constraints and Show Margins
+2. Autoconnect: Enable or disable
+3. Clear All Constraints: Clear all constraints in layout
+4. Infer Constraints: Create constraints by inference
+5. Default Margins: Set default margins
+6. Pack: Pack or expand selected elements
+7. Align: Align selected elements
+8. Guidelines: Add vertical or horizontal guidelines
+9. Zoom controls: Zoom in or out
+
+### 2. Autoconnect
+Generates constraints against parent layout when enabled
+
+## ConstraintLayout handles
+> Diagram by teacher
+![](2022-01-26-20-23-41.png)
+
+1. Resizing handle
+2. Constraint line and handle
+3. Constraint handle
+4. Baseline handle
+
+## Align elements by baseline
+1. Click the baseline constraint button
+2. Drag from one element's baseline to another's
+
+## ***Event Handling***
+## Events
+Something that happens
+* In UI: 
+    * Click
+    * Tap
+    * Drag
+* Device:
+    * DetectedActivity such as walking, driving, tilting
+* Events are "noticed" by the Android system
+
+## Event Handlers
+A method is triggered by a spacific event and does something in response to that event.
+
+## ***Resources and Measurements***
+## Resources
+* Separate static data from code in your layouts.
+* Strings, dimensions, images, menu text, colors, styles
+* Useful for localization
+* Stored in **res** folder
+
+## Measurements
+DO NOT use device-dependent or density dependent units such as Pixels(px) or measurements(in, mm, cm, etc).
+Use:
+* Density-independent Pixels (dp) for Views
+* Scale-independent Pixels (sp) for text
