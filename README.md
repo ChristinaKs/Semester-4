@@ -2,7 +2,7 @@
 > A collection of notes, projects and other relevent documents in relations to my fourth semester in the three year technical computer science program at a cegep level.
 
 ## [Folder: Networks](#Networks)
-### [File: NetworkNotes.md](#NetworkNotes.md)
+### [File: NetworksNotes.md](#NetworksNotes.md)
   This is a file containing notes from the Networks course, pulled from both classes with the teacher as well as the book "Network+ Guide to Networks" 7th Edition written by Tamara Dean, Jean Andrews and Jill west. ISBN:1305090942
   
 ### File: Any file with the name format YYYY-MM-DD-HH-MM-SS.png
