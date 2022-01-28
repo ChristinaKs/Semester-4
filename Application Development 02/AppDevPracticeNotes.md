@@ -3,7 +3,7 @@
 
 > For tutorials on Android Studio app, you can visit https://developer.android.com
 
-# Chapter 02
+# Chapter 02 -- Creating your First app
 ## View Defined in XML
 ```XML
 <TextView
@@ -142,3 +142,89 @@ button.setOnClickListener(new View.OnClickListener() {
    ```XML
    android:text="@string/title"
    ```
+
+## Creating a TextView in XML
+```XML
+<TextView android:id="@+id/textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/my_story"/>
+```
+
+## Common TextView attributes
+```XML
+android:text—text to display
+android:textColor—color of text
+android:textAppearance—predefined style or theme
+android:textSize—text size in sp
+android:textStyle—normal, bold, italic, or bold|italic
+android:typeface—normal, sans, serif, or monospace
+android:lineSpacingExtra—extra space between lines in sp
+```
+
+## Formatting Active weblinks
+* Java
+    ```java
+    <string name="article_text">... www.rockument.com ...</string>
+    ```
+* XML
+    ```HML
+    <TextView
+        android:id="@+id/article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="@string/article_text"/>
+    ```
+
+## Creating TextVuew in Java Code
+```java
+TextView myTextview = new TextView(this);
+myTextView.setWidth(LayoutParams.MATCH_PARENT);
+myTextView.setHeight(LayoutParams.WRAP_CONTENT);
+myTextView.setMinLines(3);
+myTextView.setText(R.string.my_story);
+myTextView.append(userComment);
+```
+
+## ScrollView Layout with one TextView
+```XML
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/article_subheading">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        .../>
+</ScrollView>
+```
+
+## ScrollView Layout with a View Group
+```XMl
+<ScrollView ...
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/article_subheading" 
+            .../>
+
+        <TextView
+            android:id="@+id/article" ... />
+    </LinearLayout>
+</ScrollView>
+```
+
+## ScrollView with Image and Button
+```XML
+<ScrollView...>
+    <LinearLayout...>
+        <ImageView.../>
+        <Button.../>
+        <TextView.../>
+    </LinearLayout>
+</ScrollView>
+```

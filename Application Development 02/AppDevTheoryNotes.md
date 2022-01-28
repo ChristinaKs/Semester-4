@@ -228,10 +228,8 @@ MainActivity.class.getSimpleName();
 Log.d(TAG, "Creating the URI...");
 ```
 
-# Chapter 03
 ## *Layouts and Resources for the UI*
-
-> This chapter discusses Views, view groups and view hierarchy, the layout editor and *ConstraintLayout*, Event handling as well as Resources and Measurements
+> This subchapter discusses Views, view groups and view hierarchy, the layout editor and *ConstraintLayout*, Event handling as well as Resources and Measurements
 
 ## ***Views***
 ## What is a view?
@@ -403,3 +401,35 @@ DO NOT use device-dependent or density dependent units such as Pixels(px) or mea
 Use:
 * Density-independent Pixels (dp) for Views
 * Scale-independent Pixels (sp) for text
+
+## *Text and Scrolling Views*
+
+> This subchapter discusses TextView and Scroll view
+
+## ***TextView***
+## TextView for Text
+* TextView is a View subclass for single and multi-line text
+    * EditText is a TextView subclass with editable text
+
+Both of these Views are controlled with layout attributes. You may set the text statically from a string resource in XML or dynamically from Java code and any source.
+
+## Formatting Text in String Resource
+* Use \<b> and \<i> HTML tags for bold and italics
+* All other HTML tags are ignored
+* String resources: one unbroken line = one paragraph
+* \n starts a new a line or paragraph
+* Escape apostrophes and quotes with backslash (\\", \\')
+* Escape any non-ASCII characters with backslash (\\)
+
+## ***ScrollView***
+## What About Large Amounts of Text?
+* Only one View element (usually TextView) allowed in a ScrollView
+* To scroll multiple elements, use one ViewGroup (such as LinearLayout) within the ScrollView
+
+## ScrollView for Scrolling Content
+* Subclass of FrameLayout
+* Holds all content in memory
+* Not good for long texts, complex layouts
+* Do not nest multiple scrolling views
+* Use HorizontalScrollView for horizontal scrolling
+* Use a RecyclerView for lists
