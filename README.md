@@ -1,5 +1,6 @@
 # Semester 04
 > A collection of notes, projects and other relevent documents in relations to my fourth semester in the three year technical computer science program at a cegep level.
+> 
 <br><br>
 ## Folder: Networks
 ### File: NetworksNotes.md
