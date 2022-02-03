@@ -22,7 +22,7 @@
 <br><br>  
 ## Folder: System Development
 ### File: SysDevNotes.md
-    A file containing notes from the System debelopment course, pulled from the teacher's powerpoints, as well as class presentations.
+   A file containing notes from the System development course, pulled from the teacher's powerpoints, as well as class presentations.
  <br>
 ### File: Any file with the name format YYYY-MM-DD-HH-MM-SS.png
   These are images taken from the teacher's notes or online (has link attached to it when it comes up) that is used in any other file in this folder.
