@@ -205,3 +205,20 @@ As the project moves forward, the project manager will schedule regular status m
 * Offer comments to team members
 * Conduct brainstorming sessions
 * Encourage one another
+<br><br>
+
+# Chapter 02
+## *Businesses & Organization*
+> []
+<br>
+
+## What is a business?
+A business is an organization that produces or sells goods or services that satisfy the needs, wants and demands of consumers.<br>
+Any commercial activity that seeks profit --
+
+* Profit
+
+* Non-profit
+
+* Not-for-profit
+

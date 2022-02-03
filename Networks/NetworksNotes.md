@@ -3,6 +3,8 @@
 
 > The resources a network makes available to its users include applications and the data provided by these applications. Collectively, these resources are usually referred to as network services. A network is a group of computers and other devices connected by some type of transmission media.
 
+<br>
+
 ## How Networks are used
 * Client-server Applications || Client computer requests data or a service from a second computer (the server).
     * Web services || A web browser (client computer) requests data or services; the Web serber (server app) returns a the requested data.
@@ -30,11 +32,15 @@
    * Voice and video transmissions are delay-sensitive, they are considered loss-tolerent. 
    * Bandwith = amount of traffic, data, or transmission activity on the network
 
+<br>
+
 ## Controlling Network Access
 * Topology || how parts of a whole work together
 * Physical topology || hardware -- how computers, cables and other devices form the physical network
 * Logical topology || software -- [missing description]
 * Network operating system || controlls access to the entire network
+
+<br>
 
 ## Peer-to-Peer (or point-to-point) Model
 The OS of each computer on the network is responsible for controlling access to its resources - no centralized connection. Each computer has its own local account that is not accessible by others. No computer has more authority than another; each computer controls its own resources, and communicates directly with other computers
@@ -48,6 +54,8 @@ Computers (hosts) can share resources or prevent accessto resources.
     * Not scalable
     * Not necessarily secure
     * Not practical for large installations
+
+<br>
 
 ## Client-Server Network Model
 Resources are managed by the Network Operating System (NOS) through a centralized database. A Windows domain uses the client-server model to control access to the network, where security on each computer or device is controlled by a centralized database on a domain controller
@@ -82,6 +90,8 @@ Servers that have NOS installed require more memory, storage capacity and proces
         > Complex in design
         > Harder to maintain
 
+<br>
+
 ## LAN and Their Hardware
 A network is a LAN (Locan Area Network) because each node on the network can communicate directly with others on the network. This type of network is usually contained in a small space. 
 
@@ -95,6 +105,8 @@ A host is any computer on a network that hosts a resource such as an application
 
 > The ring topology, which is no longer used today, is where nodes are connected in a ring form: one node may only connect to two neighbour nodes. Any node may put data on the ring only when it holds a token, which is a group of bits which passes through the ring. It is no longer used because it is slow.
 
+<br>
+
 ## MANs and WANs
 Metropolitan Area Network (MAN) is a group of connected LANs in the same geographical area - also known as Campus area network (aka CAN).
 
@@ -102,10 +114,14 @@ Wide Area Network (WAN) is a group of LANs spread over a wide geographical area.
 
 Personal Area Network (PAN) is the smallest network and is used for personal devices.
 
+<br>
+
 ## HVAC Systems
 HVAC systems include heating, bentilation and air conditioning sustems. They control the environment in a data center. The environment includes temperature, humidity, airfloww and filtering. This type of system must provide acceptable temperature and humidity ranges for devices that might overheat or fail due to high temps and humidity.
 
     These systems usually occupy the space above the ceiling or below the floor in a data center.
+
+<br>
 
 ## Protection Against Static Electricity
 Electrostatic discharge (ESD) can damage electronic components that are grounded within a computer case. This damage can result in:
@@ -116,6 +132,8 @@ Electrostatic discharge (ESD) can damage electronic components that are grounded
 To avoid ESD:
 * Ground yourself by wearing an ESD strap or touching the case before touching its interior components
 * Shut down and unplug a computer befre working inside it
+
+<br>
 
 ## Troubleshooting Network Problems
 Troubleshooting steps:
@@ -138,6 +156,8 @@ Troubleshooting steps:
 > http://bucarotechelp.com/networking/support/82042501.asp
 ![](2022-01-26-11-18-10.png)
 
+
+<br>
 
 ## The seven-layer OSI model
 The Open Systems Interconnection (OSI) reference model is a seven-layer model developed to categorize the layers of communication. It was first developed by the International Organization for Standardization, also called the ISO. The OSI model helps understand networking protocols and troubleshoot network problems.
@@ -200,8 +220,150 @@ The Application, Presentation, and Session layers are so intertwined that, in pr
 > Cengage Learning -- **How All The Layers Work Together**
 ![](2022-01-26-11-09-15.png)
 
+<br>
+
 ## Protocol Data Unit (PDU)
 The PDU is a group of bits that moves from one layer of the OSI model to the next or from one LAN to the next.
 
 > Cengage Learning - **Names for a PDU or Message as It Moves from One Layer to Another**
 ![](2022-01-26-11-12-41.png)
+
+<br><br><br>
+
+# Chapter 02
+## *How Computers Find Each Other on Networks*
+>This chapter addresses how computers and other devices are addressed on a network, explains how host names and domain names work, identifies how ports and sockets work at the OSI Transport layer, demonstrates how IP addresses are assigned and formatted at the OSI Network layer and teaches how to use command-line tools to troubleshoot problems with network addresses.
+
+<br>
+
+## An OverView of Addressing on Networks
+There are four addressing methods:<br>
+1. Application layer FQDNs, computer name and host name
+2. Transport layer port numbers
+3. Network layer IP address
+4. Data link layer MAC address
+
+<br>
+
+### **1. Application layer FQDNs, computer name and host name**
+Every host on a network is assigned a unique character-based name called the fully qualified host name or the fully qualified domain name (FQDN). I.e.: www.company.com.
+* The two last parts are called the domain name - it matches the organization's domain or network
+* First part is the host name
+
+### **2. Port Numbers**
+The port number identifies one application among several that might be running on a host.
+
+### **3. IP address**
+It is assigned to every interface (network connection made by a node or host). It is used to find hosts on any computer in the world.
+* IPv4 - Internet Protocol version 4
+    * 32 bits
+    * 4 decimal numbers called octets
+* IPv4 - Internet Protocol version 6
+    * 128 bits
+    * 8 blocks of hexadecimal numbers
+
+### **4. MAC address**
+The MAC address  is also known as the physical address. It's embedded on each NIC and is unique. Nodes on a LAN will find each other using the MAC address<br>
+> https://silicophilic.com/change-mac-address-in-windows/<br>![](2022-02-02-10-30-15.png)
+
+The traditional mac address contains two parts:
+* First 24 bits
+    * Known as OUI (organizationally unique identifier) or block ID or or company ID
+    * Identifies the NIC's manufacturer
+    * Assigned by the Institute of Electrical and Electronics Engineers (IEEE)
+* Last 24 bits
+    * Known as extension identifier or device ID
+    * Identifies the device
+    * Is based on the NIC's model and manufacture date
+
+<br>
+
+## How Host Names and Domain Names Work
+Host and domain names were created because they are easier to remember than numeric IP addresses. They can include letters, hyphens and underscores - no other special characters are allowed.<br>Domain names must be registered with an Internet ing company that works on behalf of ICANN.
+
+<br>
+
+### **DNS (Domain Name System *or* Domain Name Service)**
+DNS was created to associate computer names to IP addresses and is an application layer client-server system of computers and databases made up of:
+1. Namespace
+    * The entire collection on computer names and associated IP addresses stored in databases on DNS name servers
+2. Name servers
+    * Hold database
+    * Organized in hierarchical structure
+3. Resolvers
+    * DNS client that requests information from DNS name servers<br>
+
+### **How Name Servers are Organized**
+Root servers hold TDL servers (top-level domain) > TDL servers hold information about the authorative servers
+> Cengage Learning <br> ![](2022-02-02-13-13-56.png)<br>![](2022-02-02-13-13-11.png)
+
+How the resolution process gets more complex:
+* Local name server is not an authoratice one
+    * Exists only to resolve name for clients
+    * Called a caching-only server
+    * Queries the company's authoritative name server when it's requested for information that is not stored in DNS cache
+* Name server doesn't have access to root server
+* TDL name server might be aware of an intremediate name server rather than the authorative name server
+    * When the intermediate server is queried it might return the IP address of the authorative name server
+
+### **Recursive and Iterative Queries**
+| Recursive Querie | Iterative Querie |
+|------------------|------------------|
+| Demands a resolution or a "can't be found" answer | Local server issues queries to other servers<br> Does not demand a resolution
+
+### **DNS Zones and Zone Transfers**
+* DNS follows a dirstributed databse model where data is distributed over thousands of servers so that DNS will not fail if a couple do.
+
+### **DNS Server Software**
+
+### **How a Namespace Database is Organized**
+
+### **DDNS (Dynamic DNS)**
+
+### **Name resolution**
+Name resolution is the process of discovering the IP address of a host when the FQDN is known.
+
+### **Hosts Files**
+How it used to be:<br>&emsp; Text file called HOSTS.TXT associated computer name with IP addresses. It was named hosts file or host table. Did not hold with the growth of the Internet. 
+Now:<br>&emsp; Peer-to-peer networks have their own DNS server (or can use hosts file).
+
+<br>
+
+## How Ports and Sockets Work
+Port numbers ensure that data is transmitted to the correct applications. They are divided into three types: 
+* Well known ports (0 to 1023)
+    * Assigned to widely used and well-known protocols and programs
+* Registered ports (1024 to 49151)
+    * Used by network users and processes that are not considered standard processes
+* Dynamic and Private ports (49152 to 65535)
+    * Dynamic port can be assigned by a client or server as the need arises
+    * Private port is assigned by a network administrator that is different from the well-known port number for that service<br>
+
+Sockets consist of host's IP address and the port number of an application running on the host
+* A colon separates the two values
+
+> Cengage Learning <br> ![](2022-02-02-11-04-57.png)
+
+<br>
+
+## How IP Addresses Are Formatted and Assigned
+
+<br>
+
+### **How IPv4 Addresses Are Formatted and Assigned**
+
+### **How IPv6 Addresses Are Formatted and Assigned**
+
+<br>
+
+## Tools for Troubleshooting IP Address Problems
+
+<br>
+
+### **Ping**
+
+### **ipconfig**
+
+### **ifconfig**
+
+### **nslookup**
