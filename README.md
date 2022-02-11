@@ -21,7 +21,7 @@
   These are images taken from the teacher's notes or online (has link attached to it when it comes up) that is used in any other file in this folder.
 <br>
 ### Folder: Assignments
-  This folder is one where all four personal assignments will be uploaded
+  This folder is one where all four personal assignments will be uploaded <br>
   &emsp; **Folder A01: Folder dedicated to assignment 01** <br>
   &emsp;&emsp; File: Creds.docx <br>
   &emsp;&emsp;&emsp; File to link and credit where the logo on the hompage and both hotel images were taken from <br>
@@ -36,7 +36,7 @@
   These are images taken from the teacher's notes or online (has link attached to it when it comes up) that is used in any other file in this folder.
   <br>
 ### Folder: Assignments
-  This folder is one where all four personal assignments will be uploaded
+  This folder is one where all four personal assignments will be uploaded <br>
   &emsp; **Folder A01: Folder dedicated to assignment 01** <br>
   &emsp;&emsp; File: A01Instructions.pdf<br>
   &emsp;&emsp;&emsp; Instructions for the entirety of the assignment<br>
