@@ -312,9 +312,16 @@ How the resolution process gets more complex:
 | Demands a resolution or a "can't be found" answer | Local server issues queries to other servers<br> Does not demand a resolution
 
 ### **DNS Zones and Zone Transfers**
-* DNS follows a dirstributed databse model where data is distributed over thousands of servers so that DNS will not fail if a couple do.
+* DNS follows a distributed database model where data is distributed over thousands of servers so that DNS will not fail if a couple do.
+* DNS zone = domains an organization is responsible for managing
+* Zone transfer = process where a secondary DNS server makes a reqiest to the primary server for a database update
 
 ### **DNS Server Software**
+Most popular = BIND (Berkeley Internet Name Domain) which is a free, open source software that  runs on linux, unix and windows platforms. <br>Windows has its own DNS called Microsoft DNS server.
+
+Split DNS, or split-horizon DNS is a DNS in which internal and external queries are handled by different DNS servers. They are kept separate.
+
+A firewall 
 
 ### **How a Namespace Database is Organized**
 

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccccff"
+    tools:context=".hotel1">
+
+    <TextView
+        android:id="@+id/user2"
+        android:layout_width="116dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="User"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/back1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/detailsandbooking1"
+        android:layout_width="269dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Details and Booking"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="190dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsandbooking1"
+        app:srcCompat="@drawable/hotel1" />
+
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="91dp"
+        android:layout_height="39dp"
+        android:backgroundTint="#7575cf"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="@+id/user2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/user2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/noguests1"
+        android:layout_width="283dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter the number of guests"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price1" />
+
+    <EditText
+        android:id="@+id/nonights1"
+        android:layout_width="283dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="84dp"
+        android:ems="10"
+        android:hint="Enter the number of nights"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/noguests1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/noguests1"
+        app:layout_constraintTop_toBottomOf="@+id/noguests1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/booknow1"
+        android:layout_width="287dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#7575cf"
+        android:text="Book Now!"
+        app:layout_constraintEnd_toEndOf="@+id/nonights1"
+        app:layout_constraintStart_toStartOf="@+id/nonights1"
+        app:layout_constraintTop_toBottomOf="@+id/nonights1" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="121dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="28dp"
+        android:background="#7575cf"
+        android:text="100$ per night"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
