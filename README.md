@@ -19,7 +19,15 @@
   <br>
 ### File: Any file with the name format YYYY-MM-DD-HH-MM-SS.png
   These are images taken from the teacher's notes or online (has link attached to it when it comes up) that is used in any other file in this folder.
-<br><br>  
+<br>
+### Folder: Assignments
+  This folder is one where all four personal assignments will be uploaded
+  &emsp; **Folder A01: Folder dedicated to assignment 01** <br>
+  &emsp;&emsp; File: Creds.docx <br>
+  &emsp;&emsp;&emsp; File to link and credit where the logo on the hompage and both hotel images were taken from <br>
+  &emsp;&emsp; File: A01Instructions.pdf <br>
+&emsp;&emsp;&emsp; File with all instructions relevant to the application developped <br>
+ <br> <br>
 ## Folder: System Development
 ### File: SysDevNotes.md
    A file containing notes from the System development course, pulled from the teacher's powerpoints, as well as class presentations.
@@ -29,7 +37,7 @@
   <br>
 ### Folder: Assignments
   This folder is one where all four personal assignments will be uploaded
-  &emsp; **Folder A01: Folder dedicated to assignment 01**
+  &emsp; **Folder A01: Folder dedicated to assignment 01** <br>
   &emsp;&emsp; File: A01Instructions.pdf<br>
   &emsp;&emsp;&emsp; Instructions for the entirety of the assignment<br>
   &emsp;&emsp; File: Assignment01_01.mpp<br>
