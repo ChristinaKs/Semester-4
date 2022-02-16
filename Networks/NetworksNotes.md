@@ -210,7 +210,7 @@ The layers from bottom to top are layered 1 through 7:
 > https://www.imperva.com/learn/application-security/osi-model/
 ![](2022-01-26-10-30-59.png)
 
->https://www.bmc.com/blogs/osi-model-7-layers/
+>https://www.bmc.com/blogs/osi-model-7-layers/ <br>
 ![](2022-01-26-10-32-16.png)
 
 Layers 2 and 1 are responsible for interfacing with the physical hardware only on the local network. The protocols at these layers are programmed into the firmware of a computer’s NIC and other networking hardware. The top layers of the OSI model work the same for both wired and wireless transmissions. The only layers that must deal with the details of wired versus wireless transmissions are the Link layer and Physical layer on the firmware of the NIC. 
