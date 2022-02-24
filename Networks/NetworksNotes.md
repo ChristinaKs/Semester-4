@@ -10,7 +10,7 @@
     * Web services || A web browser (client computer) requests data or services; the Web serber (server app) returns a the requested data.
     * Email Services || SMTP (Simple Mail Transfer Protocol) sends an email to the sender's mail server, which sends it to  the receiver's mail server which intern uses POP3(Post Office Protocol) or IMAP4 (Internet Message Access Protocol) to allow the receiver to receive the email.
     * FTP (File Transfer Protocol) || Transfer files between two computers using FTP or SFTP (Secure File Transfer Protocol)
-    * Telnet service || Command-line used to control a computer remotely (not sexure)
+    * Telnet service || Command-line used to control a computer remotely (not secure)
     * Remote desktop || Secure transmission who both use RDP to establish a client-server communication
     * Remote applications || Aplication installed on a server - easy for maintenance and backup of applications
   
@@ -27,7 +27,7 @@
     * Types of communication services:
         * Conversational voice VoIP (Voice over IP) || Can use point-to-point model (Example: Skype) or point-to-multipoint model (Example: Conferance call)
         * Streaming live audio and video (Example: Skype)
-        * Sstreaming stored audio and video (Example: Youtube)
+        * Streaming stored audio and video (Example: Youtube)
 
    * Voice and video transmissions are delay-sensitive, they are considered loss-tolerent. 
    * Bandwith = amount of traffic, data, or transmission activity on the network
@@ -165,7 +165,7 @@ The Open Systems Interconnection (OSI) reference model is a seven-layer model de
 The layers from bottom to top are layered 1 through 7:
 1. Physical Layer
     * Sends bits via a wired or wireless transmission
-        * Transmitted as wavelengths in the aor
+        * Transmitted as wavelengths in the air
 2. Data Link Layer (or Link Layer)
     * Examples of Link layer protocols are Ethernet and Wi-Fi. 
         * Ethernet works on wired networks
@@ -321,7 +321,13 @@ Most popular = BIND (Berkeley Internet Name Domain) which is a free, open source
 
 Split DNS, or split-horizon DNS is a DNS in which internal and external queries are handled by different DNS servers. They are kept separate.
 
-A firewall 
+A firewall is a device (can be a router or a computer running special software) that filters or blocks traffic between networks. 
+
+| External DNS | Internal DNS |
+|--------------|--------------|
+| Behind a more porous firewall<br>&emsp;Allows greater exposure to the Internet | Better protected behind second stricter firewall |
+
+The area between the two firewalls is called the DMZ (demilitarized zone):<br>&emsp;
 
 ### **How a Namespace Database is Organized**
 
@@ -374,3 +380,51 @@ Sockets consist of host's IP address and the port number of an application runni
 ### **ifconfig**
 
 ### **nslookup**
+<<<<<<< Updated upstream
+=======
+
+<br><br>
+
+# **Chapter 03**
+## *How Data is Transported Over Networks*
+
+> This chapter allows for: <br>&emsp;Identifying and explaining the functions of the core TCP/IP protocols;<br>&emsp;Explaining the purposes and properties of routing and describing common IPv4 and IPv6 routing protocols;<br>&emsp;Employ multiple TCP/IP utilities for network discovery and troubleshooting.
+
+<br>
+
+## TCP/IP Core Protocols
+Tcp/IP is an open and routable suite of protocols that includes: <br>
+* TCP
+* IP
+* UDP
+* ARP
+* many others <br>
+What open and routable means is that each protocol adds a header to data inherited from the layer above it;
+> Teacher's diagram <br> ![](2022-02-23-10-13-33.png)
+
+<br> 
+
+### **TCP (Transmission Control Protocol)**
+
+### **UDP (User Datagram Protocol)**
+The UDP provides no error checking or sequencing which makes it more efficient than TCP. It is useful for live audio or video transmissions and for carrying messages that fit within one data packet. <br>
+A UDP header contains four fields:
+* Source port
+* Destination port
+* Length
+* Checksum (optional in IPv4 // required in IPv6)
+
+
+> The header of the UDP packet (by https://ipwithease.com/udp-user-datagram-protocol/) <br> ![](2022-02-23-10-24-47.png)
+&emsp; - Source Port (16 bits) – Identifies the sender’s port. Cleared to zero if not used. <br>&emsp; - Destination Port (16 bits) – Identifies the receiver’s port.<br>&emsp; - Length (16 bits) – Length in bytes of the UDP header and  encapsulated data. The minimum value for this field is 8.<br>&emsp; - Checksum (16 bits) – Used for error-checking of the header and data. Carries all-zeros if unused. 
+
+
+### **IP (Internet Protocol)**
+
+### **ICMP (Internet Control Message Protocol)**
+
+### **IGMP (Internet Group Management Protocol) on IPv4 Networks**
+
+### **ARP (Address Resolution Protocol) on IPv4 Networks**
+ARP works in conjunction with IPv4 to discover the MAC address of a host or a node on the local netwwork. It also maintains a database that maps IP addresses to MAC addresses on the local network. It is a Layer 2 protocol that uses IP in Layer 3 and operates only within its local network. Arp relies on broadcasting. The ARP table is the database of IP to MAC address mapping.
+>>>>>>> Stashed changes
