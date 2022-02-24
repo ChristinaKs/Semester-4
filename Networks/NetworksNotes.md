@@ -425,4 +425,3 @@ A UDP header contains four fields:
 
 ### **ARP (Address Resolution Protocol) on IPv4 Networks**
 ARP works in conjunction with IPv4 to discover the MAC address of a host or a node on the local netwwork. It also maintains a database that maps IP addresses to MAC addresses on the local network. It is a Layer 2 protocol that uses IP in Layer 3 and operates only within its local network. Arp relies on broadcasting. The ARP table is the database of IP to MAC address mapping.
->>>>>>> Stashed changes
