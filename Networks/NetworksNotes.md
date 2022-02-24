@@ -380,8 +380,6 @@ Sockets consist of host's IP address and the port number of an application runni
 ### **ifconfig**
 
 ### **nslookup**
-<<<<<<< Updated upstream
-=======
 
 <br><br>
 
